@@ -1,0 +1,162 @@
+/* Start */
+.page-content {
+  padding: 30px;
+  overflow-y: auto;
+  height: 80vh;
+}
+@media (max-width: 320px) {
+  .page-content {
+    padding: 10px;
+  }
+}
+.page-content .github-portfolio-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #1F2428;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 425px) {
+  .page-content .github-portfolio-info {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .page-content .github-portfolio-info {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 425px) {
+  .page-content .github-portfolio-info > div {
+    margin-bottom: 15px;
+  }
+}
+.page-content .github-portfolio-info > div a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+.page-content .github-portfolio-info .portfolio-image {
+  max-width: 100%;
+}
+.page-content .github-portfolio-info .portfolio-image a img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.page-content .github-portfolio-info > div a svg path{
+  transition: fill 0.3s ease-in-out;
+}
+.page-content .github-portfolio-info > div:not(.portfolio-image) a:hover {
+  color: #d1a0ff;
+}
+.page-content .github-portfolio-info > div a svg:hover path {
+  fill: #d1a0ff;
+}
+.page-content .github-portfolio-info > div a span {
+  display: inline-flex;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.page-content .github-portfolio-info .portfolio-repos a svg {
+  width: 16px;
+  height: 16px;
+}
+.page-content .github-portfolio-info .portfolio-followers a svg {
+  width: 20px;
+  height: 16px;
+}
+.page-content .updated-repos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.page-content .updated-repos h4 {
+  color: #fff;
+}
+@media (max-width: 375px) {
+  .page-content .updated-repos h4 {
+    font-size: .8rem;
+  }
+}
+@media (max-width: 320px) {
+  .page-content .updated-repos h4 {
+    font-size: .78rem;
+  }
+}
+.page-content .github-portfolio-repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 10px;
+}
+@media (max-width: 375px) {
+  .page-content .github-portfolio-repos {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
+}
+.page-content .github-portfolio-repos > div {
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #1F2428;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 375px) {
+  .page-content .github-portfolio-repos > div {
+    padding: 15px;
+  }
+}
+.page-content .github-portfolio-repos > div h2 {
+  color: #f97656;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+@media (max-width: 375px) {
+  .page-content .github-portfolio-repos > div h2 {
+    font-size: 1.14rem;
+  }
+}
+@media (max-width: 320px) {
+  .page-content .github-portfolio-repos > div h2 {
+    font-size: 1.07rem;
+  }
+}
+.page-content .github-portfolio-repos > div ul {
+  display: flex;
+  align-items: center;
+}
+.page-content .github-portfolio-repos > div ul li {
+  margin-right: 15px;
+}
+@media (max-width: 375px) {
+  .page-content .github-portfolio-repos > div ul li {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 320px) {
+  .page-content .github-portfolio-repos > div ul li {
+    margin-right: 10px
+  }
+}
+.page-content .github-portfolio-repos > div ul li:first-of-type {
+  color: #a4b2ff;
+  display: flex;
+  align-items: center;
+}
+.page-content .github-portfolio-repos > div ul li:first-of-type span {
+  display: inline-flex;
+  margin-left: 5px;
+}
+.page-content .github-portfolio-repos > div ul li:not(:first-of-type) {
+  color: #fff;
+}
+.page-content .github-portfolio-repos > div ul li svg {
+  width: 14px;
+  height: 14px;
+}
+.page-content .github-portfolio-repos > div ul li svg:hover path {
+  fill: #d1a0ff;
+}
+/* End */

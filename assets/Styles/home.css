@@ -1,0 +1,92 @@
+/* Start */
+.page-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 100px;
+  overflow-y: auto;
+  height: 75vh;
+}
+
+@media (max-width: 575px) {
+  .page-content {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .page-content .my-info {
+    order: 2;
+  }
+}
+.page-content .my-info h4 {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px 15px 15px 0;
+  color: #fff;
+  background-color: #0bbba0;
+}
+.page-content .my-info h1 {
+  color: #fff;
+}
+@media (max-width: 320px) {
+  .page-content .my-info h1 {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.page-content .my-info h3 {
+  color: #f98268;
+}
+.page-content .links {
+  margin-top: 20px;
+}
+.page-content .links li {
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+@media (max-width: 320px) {
+  .page-content .links li {
+    font-size: 0.82rem;
+  }
+}
+.page-content .links li svg {
+  width: 16px;
+  height: 16px;
+}
+.page-content .links li svg path {
+  fill: #fff;
+}
+.page-content .links li a {
+  color: #fff;
+  margin-left: 5px;
+}
+.page-content .my-image {
+  max-width: 100%;
+}
+@media (max-width: 575px) {
+  .page-content .my-image {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .page-content .my-image {
+    order: 1;
+  }
+}
+.page-content .my-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #000;
+}
+@media (max-width: 575px) {
+  .page-content .my-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* End */

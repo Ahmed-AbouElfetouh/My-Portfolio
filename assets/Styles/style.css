@@ -1,0 +1,289 @@
+/* Start Global Styles */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+ul,
+ol {
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* End Global Styles */
+/* Start Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #24292e;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-corner {
+  background-color: #24292e;
+}
+::-moz-scrollbar {
+  width: 15px;
+}
+::-moz-scrollbar-track {
+  background-color: #24292e;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+::-moz-scrollbar-thumb {
+  background-color: #333;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+::-moz-scrollbar-corner {
+  background-color: #24292e;
+}
+::-o-scrollbar {
+  width: 15px;
+}
+::-o-scrollbar-track {
+  background-color: #24292e;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+::-o-scrollbar-thumb {
+  background-color: #333;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+::-o-scrollbar-corner {
+  background-color: #24292e;
+}
+/* End Scrollbar Styles */
+/* Start Main Header */
+.main-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2428;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.main-header .links {
+  display: flex;
+  align-items: center;
+}
+.main-header .links li {
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+@media (max-width: 575px) {
+  .main-header .links li:not(:first-of-type) {
+    display: none;
+  }
+}
+.main-header .links li img {
+  width: 31px;
+  height: 17px;
+}
+.main-header .head-title {
+  color: #fff;
+  font-size: 0.9rem;
+}
+@media (max-width: 375px) {
+  .main-header .head-title {
+    text-align: center;
+  }
+}
+.main-header .colors {
+  display: flex;
+  align-items: center;
+}
+.main-header .colors li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin: 3px;
+  cursor: pointer;
+}
+.main-header .colors li:first-of-type {
+  background-color: #f1fa8c;
+}
+.main-header .colors li:nth-last-of-type(2) {
+  background-color: #50fa7b;
+}
+.main-header .colors li:last-of-type {
+  background-color: #ff5555;
+}
+/* End Main Header */
+/* Start Portfolio Body */
+.portfolio-body {
+  height: calc(100vh - 70px);
+  display: flex;
+}
+.portfolio-body .col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #24292e;
+  width: fit-content;
+}
+.portfolio-body .col-1 .top-icons > a div,
+.portfolio-body .col-1 .bottom-icons > a div {
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.portfolio-body .col-1 .top-icons > a div:hover,
+.portfolio-body .col-1 .bottom-icons > a div:hover {
+  background-color: #1f2428;
+}
+.portfolio-body .col-1 .top-icons > a div.active {
+  border-left: 2px solid #f9826c;
+}
+.portfolio-body .col-1 .top-icons > a div.active svg path {
+  fill: #fff;
+}
+.portfolio-body .col-2 {
+  background-color: #1f2428;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  min-width: 230px;
+}
+@media (max-width: 575px) {
+  .portfolio-body .col-2 {
+    display: none;
+  }
+}
+.portfolio-body .col-2 .col-head {
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.portfolio-body .col-2 .pages-head {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.portfolio-body .col-2 .pages-head p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.portfolio-body .col-2 .portfolio-icons > a div {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.portfolio-body .col-2 .portfolio-icons > a div:hover {
+  background-color: #24292e;
+}
+.portfolio-body .col-2 .portfolio-icons > a div img {
+  width: 18px;
+  height: 18px;
+}
+.portfolio-body .col-2 .portfolio-icons > a div p {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+.portfolio-body .col-3 {
+  background-color: #24292e;
+  flex: 1;
+}
+@media (max-width: 575px) {
+  .portfolio-body .col-3 {
+    width: 100vw;
+    overflow-x: auto;
+  }
+}
+.portfolio-body .col-3 .portfolio-icons {
+  display: flex;
+  align-items: center;
+  background-color: #1f2428;
+  overflow-x: auto;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .portfolio-body .col-3 .portfolio-icons {
+    width: 64vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-body .col-3 .portfolio-icons {
+    width: 73vw;
+  }
+}
+.portfolio-body .col-3 .portfolio-icons > a div {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-left: 1px solid #24292e;
+  border-right: 1px solid #24292e;
+}
+.portfolio-body .col-3 .portfolio-icons > a div.active {
+  background-color: #24292e;
+  border-top: 1px solid #f9826c;
+}
+.portfolio-body .col-3 .portfolio-icons > a div img {
+  width: 18px;
+  height: 18px;
+}
+.portfolio-body .col-3 .portfolio-icons > a div p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+/* End Portfolio Body */
+/* Start Main Footer */
+.main-footer {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.main-footer .col-1,
+.main-footer .col-2 {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .main-footer .col-2,
+  .main-footer .col-1 {
+    font-size: 0.6rem;
+  }
+}
+.main-footer .col-1 > div,
+.main-footer .col-2 > div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.main-footer .col-1 > div:first-of-type,
+.main-footer .col-2 > div:first-of-type {
+  margin-right: 10px;
+}
+.main-footer .col-1 > div p,
+.main-footer .col-2 > div p {
+  margin-left: 3px;
+}
+/* End Main Footer */

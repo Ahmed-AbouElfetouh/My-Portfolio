@@ -1,0 +1,19 @@
+/* Start */
+.page-content {
+  padding: 20px;
+}
+.page-content .page-info h3 {
+  color: #fff;
+}
+.page-content .page-info h3 a {
+  color: #fff;
+  background-image: linear-gradient(120deg, #f9826c 100%, #f9826c 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2rem;
+  background-position: 0 88%;
+  transition: background-size 0.3s ease-in-out;
+}
+.page-content .page-info h3 a:hover {
+  background-size: 100% 1.3rem;
+}
+/* End */
