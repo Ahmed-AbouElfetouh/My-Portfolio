@@ -148,7 +148,8 @@ a {
 .portfolio-body .col-1 .top-icons > a div.active {
   border-left: 2px solid #f9826c;
 }
-.portfolio-body .col-1 .top-icons > a div.active svg path {
+.portfolio-body .col-1 .top-icons > a div.active svg path,
+.portfolio-body .col-1 .bottom-icons > a div.active svg path {
   fill: #fff;
 }
 .portfolio-body .col-2 {
@@ -176,6 +177,9 @@ a {
   margin-bottom: 10px;
   color: #fff;
   cursor: pointer;
+}
+.portfolio-body .col-2 .pages-head svg {
+  transition: transform 0.3s ease-in-out;
 }
 .portfolio-body .col-2 .pages-head p {
   font-size: 0.8rem;
@@ -287,3 +291,12 @@ a {
   margin-left: 3px;
 }
 /* End Main Footer */
+
+/* Start JavsScript Classes */
+.show-hide {
+  display: none;
+}
+.rotate-0-90 {
+  transform: rotate(0) !important; 
+}
+/* End JavsScript Classes */
