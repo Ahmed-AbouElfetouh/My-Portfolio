@@ -8,6 +8,15 @@
 
 A VSCode themed developer portfolio built using HTML, CSS and JavaScript
 
+So What you will find in my project? :
+
+- This website is a multiple pages website.
+
+- A Fancy Design.
+
+- Dealing with API.
+
+- Website is fully responsive by [Media Queries].
 
 ## For Live Preview [Click Here](https://ahmed-abouelfetouh.github.io/My-Portfolio/)
 
