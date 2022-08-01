@@ -1,6 +1,6 @@
 /* Start */
 .page-content {
-  padding: 30px;
+  padding: 50px;
   overflow-y: auto;
   height: 80vh;
 }
@@ -8,6 +8,12 @@
   .page-content {
     padding: 10px;
   }
+}
+.page-content .projects-list > li {
+  display: none;
+}
+.page-content .projects-list > li.active {
+  display: block;
 }
 .page-content .project-content {
   padding: 20px;
@@ -65,9 +71,11 @@
 }
 .page-content .project-images {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 50px;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 20px;
 }
 .page-content .project-images img {
   width: 160px;
@@ -78,5 +86,59 @@
 }
 .page-content .project-images img:hover {
   transform: scale(1.2);
+}
+.page-content .slider-buttons span {
+  position: absolute;
+  z-index: 99;
+  top: 160px;
+  cursor: pointer;
+}
+@media (max-width: 320px) {
+  .page-content .slider-buttons span {
+    top: 520px;
+  }
+}
+.page-content .slider-buttons span.next-btn {
+  right: 30px;
+}
+.page-content .slider-buttons span.prev-btn {
+  left: 290px;
+}
+@media (max-width: 425px) {
+  .page-content .slider-buttons span.prev-btn {
+    left: 50px;
+  }
+}
+.page-content .slider-buttons span svg {
+  width: 21px;
+  height: 25px;
+}
+.page-content .slider-buttons span svg path {
+  fill: #fff;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.slider-bullets {
+  margin-top: 30px;
+}
+.slider-bullets ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.slider-bullets ul li{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #CCCCCC;
+  margin: 3px;
+  cursor: pointer;
+}
+.slider-bullets ul li.active {
+  background-color: #795548;
 }
 /* End */
