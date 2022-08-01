@@ -16,6 +16,8 @@ So What you will find in my project? :
 
 - Dealing with API.
 
+- Website has a Slider.
+
 - Website is fully responsive by [Media Queries].
 
 ## For Live Preview [Click Here](https://ahmed-abouelfetouh.github.io/My-Portfolio/)
